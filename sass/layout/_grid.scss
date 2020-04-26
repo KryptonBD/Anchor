@@ -1,0 +1,63 @@
+.row {
+    max-width: $grid-width;
+    margin: 0 auto;
+  
+    &:not(:last-child) {
+      margin-bottom: $gap-vertical;
+      @include respond(tabport) {
+        margin-bottom: $gap-vertical-small;
+      }
+    }
+    @include respond(tabport) {
+      max-width: 50rem;
+      padding: 0 3rem;
+    }
+  
+    @include clearfix;
+  
+    /* 
+      [] is attribute selector
+      ^ it checks if the attribute value begin with following substring
+      * it check if the attribute value contains the following substring
+      $ it checks if the attribute value end with following substring
+    */
+    [class^="col-"] {
+      float: left;
+  
+      &:not(:last-child) {
+        margin-right: $gap-horizontal;
+        @include respond(tabport) {
+          margin-right: 0;
+          margin-bottom: $gap-vertical-small;
+        }
+      }
+  
+      @include respond(tabport) {
+        width: 100% !important;
+      }
+    }
+  
+    .col-1-of-2 {
+      width: calc((100% - #{$gap-horizontal}) / 2);
+    }
+  
+    .col-1-of-3 {
+      width: calc((100% - 2 * #{$gap-horizontal})/3);
+    }
+  
+    .col-2-of-3 {
+      width: calc(2 * ((100% - 2 * #{$gap-horizontal})/3) + #{$gap-horizontal});
+    }
+  
+    .col-1-of-4 {
+      width: calc((100% - 3 * #{$gap-horizontal})/4);
+    }
+  
+    .col-2-of-4 {
+      width: calc(2 * ((100% - 3 * #{$gap-horizontal})/4) + #{$gap-horizontal});
+    }
+    .col-3-of-4 {
+      width: calc(3 * ((100% - 3 * #{$gap-horizontal})/4) + 2 * #{$gap-horizontal});
+    }
+  }
+  

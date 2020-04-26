@@ -1,0 +1,169 @@
+/*
+0px to 600px:       PHONE
+600px to 900:       Tablet Potrait
+900px to 1200px:    Tablet Landscape
+1200 to 1800px:     Normal
+1800px +:           Big Desktop
+$breakpoint
+-phone
+-tabport
+-tabland
+-bigdesktop
+1em = 16px
+*/
+/* 
+reset styles, 
+html and body selector styles
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+body {
+  box-sizing: border-box;
+  padding: 0 3rem; }
+  @media only screen and (max-width: 56.25em) {
+    body {
+      padding: 0; } }
+  @media only screen and (max-width: 37.5em) {
+    body {
+      overflow-x: hidden; } }
+
+body {
+  font-family: "Montserrat", sans-serif; }
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+  /* 
+      [] is attribute selector
+      ^ it checks if the attribute value begin with following substring
+      * it check if the attribute value contains the following substring
+      $ it checks if the attribute value end with following substring
+    */ }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+    @media only screen and (max-width: 56.25em) {
+      .row:not(:last-child) {
+        margin-bottom: 6rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .row {
+      max-width: 50rem;
+      padding: 0 3rem; } }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+      @media only screen and (max-width: 56.25em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 6rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .row [class^="col-"] {
+        width: 100% !important; } }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 6rem)/3); }
+  .row .col-2-of-3 {
+    width: calc(2 * ((100% - 2 * 6rem)/3) + 6rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 6rem)/4); }
+  .row .col-2-of-4 {
+    width: calc(2 * ((100% - 3 * 6rem)/4) + 6rem); }
+  .row .col-3-of-4 {
+    width: calc(3 * ((100% - 3 * 6rem)/4) + 2 * 6rem); }
+
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background-color: transparent; }
+  .navigation-scrolled {
+    background-color: #8631b7;
+    box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.15); }
+  .navigation__logo img {
+    width: 20rem; }
+  .navigation__list {
+    color: #fff;
+    list-style: none;
+    margin-top: 0.5rem; }
+    @media only screen and (max-width: 37.5em) {
+      .navigation__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 10vh;
+        right: 0vh;
+        background-color: #8631b7;
+        height: 90vh;
+        margin-top: 0;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.4s ease-in; } }
+  .navigation__item {
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    transition: all 0.5s;
+    border: 1.5px solid transparent; }
+    .navigation__item:hover {
+      border-color: #fff;
+      border-radius: 1px 3px; }
+    .navigation__item:active {
+      background-color: #fff;
+      color: #8631b7; }
+    @media only screen and (max-width: 37.5em) {
+      .navigation__item {
+        opacity: 0;
+        font-size: 2rem; } }
+  .navigation .menu {
+    display: none;
+    cursor: pointer; }
+    .navigation .menu span {
+      display: block;
+      width: 25px;
+      height: 3px;
+      background-color: #fff;
+      margin: 5px; }
+    @media only screen and (max-width: 37.5em) {
+      .navigation .menu {
+        display: block; } }
+  .navigation .toggle span {
+    opacity: 0; }
+  .navigation .toggle span:first-child {
+    opacity: 1;
+    transform: rotate(-45deg) translate(-5px, 6px); }
+  .navigation .toggle span:last-child {
+    opacity: 1;
+    transform: rotate(45deg) translate(-5px, -6px); }
+  .navigation .nav-active {
+    transform: translateX(0%); }
+    .navigation .nav-active li {
+      opacity: 1; }
