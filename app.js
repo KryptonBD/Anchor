@@ -12,9 +12,13 @@ const slide = () =>{
 //navbar on scroll
 const navBar = document.querySelector('.navigation');
 window.onscroll = () =>{
-    if(document.documentElement.scrollTop > 20 || document.body.scrollTop > 20) {
+    if(window.screenY == 0) {
+        navBar.classList.remove('navigation-scrolled');
+    }
+    if(document.documentElement.scrollTop > 25 || document.body.scrollTop > 25) {
         navBar.classList.add('navigation-scrolled');
     }
+    
 }
 
 slide();

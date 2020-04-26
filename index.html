@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anchor</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,400&display=swap" rel="stylesheet">
-
+    <!-- Styles  -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/icon-font.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+    <!-- Navigation -->
     <div class="navigation">
         <div class="navigation__logo">
             <img src="./assets/logo-white.png" alt="logo">
         </div>
+
         <ul class="navigation__list">
             <li class="navigation__item">Home</li>
             <li class="navigation__item">About</li>
@@ -21,13 +28,127 @@
             <li class="navigation__item">Get Started</li>
         </ul>
 
+        <!-- menubar on  small screen  -->
         <div class="menu">
             <span></span>
             <span></span>
             <span></span>
         </div>
     </div>
+    <!-- Navigation End  -->
+
+    <!-- header -->
+    <header class="header">
+        <div class="row">
+            <div class="col-1-of-2">
+                <div class="header__text-box">
+                    <h1 class="heading-primary">
+                        <span class="heading-primary--main">Sweet Deal of package</span>
+                        <span class="heading-primary--sub">Ultimate destination for Music lovers around the world</span>
+                    </h1>
+                    <a href="#" class="btn btn--white btn--animated">Download the app</a>
+                </div>
+            </div>
+            <div class="col-1-of-2">
+                <div class="header__phone-screen">
+                    <img src="./assets/phone2.png" alt="picture1" class="header__phone-screen2">
+                    <img src="./assets/phone1.png" alt="picture2" class="header__phone-screen1">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- features section  -->
+        <section class="section-features">
+            <div class="row">
+                <div class="col-1-of-3">
+                    <div class="feature-box">
+                        <f class="icon-basic-download feature-box__icon"></f>
+                        <h3 class="heading-tertiay u-margin-bottom-small">Available offline</h3>
+                        <p class="feature-box__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                            fuga eveniet rem dolore eos aliquid laudantium quis optio iusto soluta?</p>
+                    </div>
+                </div>
+
+                <div class="col-1-of-3">
+                    <div class="feature-box">
+                        <f class="icon-basic-lightbulb feature-box__icon"></f>
+                        <h3 class="heading-tertiay u-margin-bottom-small">Fewer Taps</h3>
+                        <p class="feature-box__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Earum, praesentium accusantium magnam perferendis sunt nisi accusamus quam. Doloribus, porro
+                            totam!</p>
+                    </div>
+                </div>
+
+                <div class="col-1-of-3">
+                    <div class="feature-box">
+                        <f class="icon-basic-signs feature-box__icon"></f>
+                        <h3 class="heading-tertiay u-margin-bottom-small">Franchise Support</h3>
+                        <p class="feature-box__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Libero earum enim autem possimus commodi, ab dolore eveniet illum molestias tempore.</p>
+                    </div>
+                </div>
+
+            </div> <!-- /.row -->
+        </section> <!-- /.section-features -->
+
+        <section class="section-benefits">
+            <div class="row">
+                <div class="col-1-of-2">
+                    <div class="benefits-img">
+                        <img src="./assets/dual.png" alt="Screenshot app">
+                    </div>
+                </div>
+
+                <div class="col-1-of-2">
+                    <div class="benefits__details">
+                        <h2 class="heading-secondary u-margin-bottom-small">Built With User Expereince in Mind</h2>
+                        <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo voluptatum
+                            est facilis sunt sapiente asperiores!</p>
+                    </div>
+
+                    <div class="benefits u-margin-top-big">
+                        <div class="row">
+                            <div class="col-1-of-2">
+                                <div class="benefits__box">
+                                    <f class="icon-basic-anticlockwise benefits__box-icon"></f>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="col-1-of-2">
+                                <div class="benefits__box">
+                                    <f class="icon-basic-book benefits__box-icon"></f>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </div> <!-- /.row -->
+
+                        <div class="row">
+                            <div class="col-1-of-2">
+                                <div class="benefits__box">
+                                    <f class="icon-basic-target benefits__box-icon"></f>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-1-of-2">
+                                <div class="benefits__box">
+                                    <f class="icon-basic-globe benefits__box-icon"></f>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </div> <!-- /.row -->
+
+                    </div> <!-- /.benefits -->
+                </div>
+            </div> <!-- /.row -->
+        </section> <!-- /.section-benefits -->
+    </main>
+
 
     <script src="app.js"></script>
 </body>
+
 </html>

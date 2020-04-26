@@ -1,3 +1,50 @@
 body{
     font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: $color-grey-dark;
+}
+
+.heading-primary{
+    color: $color-white;
+    text-transform: uppercase;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    margin-bottom: 5rem;
+    width: 45%;
+    &--main{
+        display: block;
+        font-size: 4.5rem;
+        letter-spacing: .7rem;
+    }
+    &--sub{
+        display: block;
+        font-size: 2.5rem;
+        font-weight: 700;
+        letter-spacing: .5rem;
+    }
+}
+.heading-secondary{
+    font-size: 2rem;
+    text-transform: uppercase;
+    // font-weight: 700;
+    color: $color-primary;
+    @supports (background-clip: text) or (-webkit-background-clip: text) {
+        background-image: linear-gradient(to right, $color-primary, $color-primary-dark);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+}
+
+.heading-tertiary {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.paragraph{
+    font-size: $default-font-size;
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
 }

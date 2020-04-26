@@ -1,0 +1,35 @@
+main{
+    background: #f7f7f7;
+}
+.section-features{
+    padding: 10rem 8rem;
+}
+.section-benefits{
+    padding: 8rem;
+    
+    @include respond(tabland) {
+        padding: 6rem;
+        .benefits-img{
+            img{
+                width: 380px;
+                height: auto;
+            }
+        }
+    }
+
+    @include respond(tabport) {
+        padding: 5rem;
+        .benefits-img{
+            text-align: center;
+            margin: 0 auto;
+            img{
+                height: 300px;
+                width: auto;
+            }
+        }
+
+        .benefits__details{
+            text-align: center;
+        }
+    }
+}

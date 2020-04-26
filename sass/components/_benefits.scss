@@ -1,0 +1,36 @@
+.benefits{
+    .row{
+        margin-bottom: 3rem !important;
+        [class^="col-"]:not(:last-child){
+            margin-right: 1.5rem !important;
+        }
+        @include respond(tabport) {
+            margin-bottom: 1.5rem !important;
+            [class^="col-"]:not(:last-child) {
+                margin-bottom: 1.5rem !important;
+            }
+        }
+    }
+    &__box{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        background: $color-white;
+        padding: 1.5rem;
+        border-radius: 5px;
+        box-shadow: 0 1rem 1rem rgba($color-black, .15);
+        cursor: pointer;
+        &:hover{
+            box-shadow: 0 .8rem 1rem rgba($color-black, .1);
+        }
+    }
+    &__box-icon{
+        font-size: 3rem;
+        padding-right: 1rem ;
+        color: $color-primary;
+        font-weight: 700;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+}
