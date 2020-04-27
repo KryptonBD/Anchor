@@ -3,15 +3,19 @@ main{
 }
 .section-features{
     padding: 10rem 8rem;
+    @include respond(tabport){
+        padding: 7rem 5rem;
+    }
 }
 .section-benefits{
     padding: 8rem;
+    
     
     @include respond(tabland) {
         padding: 6rem;
         .benefits-img{
             img{
-                width: 380px;
+                width: 350px;
                 height: auto;
             }
         }
@@ -32,4 +36,22 @@ main{
             text-align: center;
         }
     }
+
+}
+
+.section-news{
+    padding: 10rem 8rem;
+    .heading_container{
+        text-align: center;
+        
+    }
+
+    @include respond(phone) {
+        padding: 7rem 5rem;
+    }
+}
+
+.section__download{
+    padding: 10rem 8rem;
+    background-image: linear-gradient(120deg, $color-primary-light, $color-primary-dark);
 }

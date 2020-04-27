@@ -1,0 +1,22 @@
+.news{
+    border-radius: 5px;
+    box-shadow: 0 2rem 3rem rgba($color-black, .15);
+    cursor: pointer;
+    transition: all .3s;
+    &__img{
+        width: 100%;
+        height: auto;
+    }
+    &:hover{
+        box-shadow: 0 1rem 1.5rem rgba($color-black, .1);
+        transform: scale(1.2);
+    }
+
+    &__content{
+        padding: 1rem 1.5rem;
+        color: $color-primary-dark;
+        p{
+            color: $color-primary;
+        }
+    }
+}

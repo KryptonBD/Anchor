@@ -11,6 +11,9 @@ body{
     backface-visibility: hidden;
     margin-bottom: 5rem;
     width: 45%;
+    @include respond(phone) {
+        width: 100%;
+    }
     &--main{
         display: block;
         font-size: 4.5rem;
@@ -24,7 +27,7 @@ body{
     }
 }
 .heading-secondary{
-    font-size: 2rem;
+    font-size: 3rem;
     text-transform: uppercase;
     // font-weight: 700;
     color: $color-primary;
@@ -37,7 +40,7 @@ body{
 }
 
 .heading-tertiary {
-    font-size: 1.8rem;
+    font-size: 2rem;
     text-transform: uppercase;
     font-weight: 700;
 }

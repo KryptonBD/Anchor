@@ -37,6 +37,15 @@
       background-color: $color-white;
     }
   }
+
+  &--purple{
+    background-color: $color-primary;
+    color: $color-white;
+    &::after{
+      background-color: $color-primary;
+    }
+  }
+
   &::after {
     content: "";
     height: 100%;

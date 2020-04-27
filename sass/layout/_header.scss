@@ -10,11 +10,18 @@
     $color-primary-light,
     $color-primary-dark
   );
+
   &__text-box {
     position: absolute;
     top: 50%;
     left: 5%;
     transform: translateY(-50%);
+
+    @include respond(phone) {
+      text-align: center;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
 
   &__phone {
@@ -39,8 +46,10 @@
         transform: translate(-15rem, 2rem);
         
       }
-    }
 
-    
+      @include respond(phone){
+        visibility: hidden;
+      }
+    }
   }
 }

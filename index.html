@@ -6,10 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anchor</title>
 
-    <!-- Styles  -->
+    <!-- 
+        Stylesheets
+        -fonts
+        -favicon
+        -icons
+        -style
+      -->
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,400&display=swap"
         rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/favicon.png">
     <link rel="stylesheet" href="./css/icon-font.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -40,20 +47,18 @@
     <!-- header -->
     <header class="header">
         <div class="row">
-            <div class="col-1-of-2">
-                <div class="header__text-box">
-                    <h1 class="heading-primary">
-                        <span class="heading-primary--main">Sweet Deal of package</span>
-                        <span class="heading-primary--sub">Ultimate destination for Music lovers around the world</span>
-                    </h1>
-                    <a href="#" class="btn btn--white btn--animated">Download the app</a>
-                </div>
+            <div class="header__text-box">
+                <h1 class="heading-primary">
+                    <span class="heading-primary--main">Sweet Deal of package</span>
+                    <span class="heading-primary--sub">Ultimate destination for Music lovers around the world</span>
+                </h1>
+                <a href="#" class="btn btn--white btn--animated">Download the app</a>
             </div>
-            <div class="col-1-of-2">
-                <div class="header__phone-screen">
-                    <img src="./assets/phone2.png" alt="picture1" class="header__phone-screen2">
-                    <img src="./assets/phone1.png" alt="picture2" class="header__phone-screen1">
-                </div>
+
+
+            <div class="header__phone-screen">
+                <img src="./assets/phone2.png" alt="picture1" class="header__phone-screen2">
+                <img src="./assets/phone1.png" alt="picture2" class="header__phone-screen1">
             </div>
         </div>
     </header>
@@ -116,7 +121,7 @@
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                 </div>
                             </div>
-                            
+
                             <div class="col-1-of-2">
                                 <div class="benefits__box">
                                     <f class="icon-basic-book benefits__box-icon"></f>
@@ -142,10 +147,106 @@
                         </div> <!-- /.row -->
 
                     </div> <!-- /.benefits -->
+                    <div class="benefits__explore-btn">
+                        <a href="#" class="btn btn--purple btn-animated u-margin-top-medium">Discover More</a>
+                    </div>
+
                 </div>
             </div> <!-- /.row -->
         </section> <!-- /.section-benefits -->
+
+        <section class="section-news">
+            <div class="heading_container u-margin-bottom-big">
+                <h2 class="heading-secondary u-margin-bottom-medium">We are in the News</h2>
+                <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, facere?</p>
+            </div>
+            <div class="row">
+                <div class="col-1-of-3">
+                    <div class="news">
+                        <img src="./assets/news1.jpg" alt="News" class="news__img">
+                        <div class="news__content">
+                            <h3 class="heading-tertiary u-margin-bottom-small">The New Era of music is here</h3>
+                            <p class="paragraph">in New York Times</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="news">
+                        <img src="./assets/news2.jpg" alt="News" class="news__img">
+                        <div class="news__content">
+                            <h3 class="heading-tertiary u-margin-bottom-small">The revolution of Music streaming</h3>
+                            <p class="paragraph">in Sun Times</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-of-3">
+                    <div class="news">
+                        <img src="./assets/news3.jpg" alt="News" class="news__img">
+                        <div class="news__content">
+                            <h3 class="heading-tertiary u-margin-bottom-small">Uprising of Modern Music got started</h3>
+                            <p class="paragraph">in Music News</p>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- /.row -->
+        </section> <!-- /.section-news -->
+
+        <section class="section__download">
+            <div class="downloads">
+                <h2 class="downloads__heading u-margin-bottom-medium">Download the app now</h2>
+                <div class="downloads__button btn1">
+                    <img src="./assets/appstore.png" alt="App Store icon" class="downloads__img">
+                    <div class="downloads__content">
+                        <span class="downloads__text">Available on the</span>
+                        <span class="downloads__brand">App Store</span>
+                    </div>
+                </div>
+                <div class="downloads__button btn2">
+                    <img src="./assets/playstoreicon.png" alt="App Store icon" class="downloads__img">
+                    <div class="downloads__content">
+                        <span class="downloads__text">Available on the</span>
+                        <span class="downloads__brand">Play Store</span>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer class="footer">
+        <div class="row">
+            <div class="col-1-of-3">
+                <div class="footer__content">
+                    <img src="./assets/logo-purple.png" alt="logo" class="footer__logo">
+                    <p class="paragraph">
+                        Minimalist app landing page developed by Foysol. Thank you for the visit. You are free to modify
+                        this design with proper credits.
+                    </p>
+                </div>
+            </div>
+            <div class="col-1-of-3 col-foot">
+                <div class="footer__navigation">
+                    <span class="footer__navt">Product</span>
+                    <ul class="footer__list">
+                        <li>Features</li>
+                        <li>Use Cases</li>
+                        <li>Blog</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-1-of-3 col-foot">
+                <div class="footer__navigation">
+                    <span class="footer__navt">Company</span>
+                    <ul class="footer__list">
+                        <li>About</li>
+                        <li>Privacy Policy</li>
+                        <li>Terms and condition</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyleft">
+            <p>Copyleft <span class="copyleft__symbol">&copy;</span> 2020, foysol</p>
+        </div>
+    </footer>
 
 
     <script src="app.js"></script>

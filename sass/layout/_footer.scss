@@ -1,0 +1,59 @@
+.footer{
+    padding: 8rem;
+
+    &__logo{
+        width: 95%;
+        margin-left: -.8rem;
+    }
+
+    &__navigation{
+        margin-top: 1rem;
+    }
+    &__navt{
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    &__list{
+        list-style: none;
+        li{
+            width: 15rem;
+            font-size: 1.4rem;
+            padding: 1rem 1rem 1rem 0;
+            margin-top: 1rem;
+            color: $color-grey-dark-3;
+            cursor: pointer;
+            &:not(:last-child){
+                border-bottom: 1px solid $color-grey-dark;
+            }
+
+            &:hover{
+                color: $color-grey-dark;
+            }
+        }
+    }
+
+    .copyleft{
+        text-align: center;
+        &__symbol{
+            display:inline-block;
+            transform: rotate(180deg)
+        }
+        p{
+            font-size: 1.4rem;
+        }
+    }
+
+    @include respond(tabport){
+        &__list{
+            li{
+                width: 10rem;
+                font-size: 1rem;
+            }
+        }
+        .col-foot{
+            max-width: 50% !important;
+        }
+    }
+}

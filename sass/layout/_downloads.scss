@@ -1,0 +1,79 @@
+.downloads{
+    text-align: center;
+    &__heading{
+        font-size: 3rem;
+        color: $color-white;
+        text-transform: capitalize;
+        letter-spacing: .5rem;
+        font-weight: 700;
+    }
+    &__button{
+        display: inline-block;
+        width: 25rem;
+        background: $color-white;
+        color: $color-primary-dark;
+        padding: 1.5rem 1rem;
+        border-radius: 3px;
+        box-shadow: 0 2rem 2.5rem rgba($color-black, .15);
+        cursor: pointer;
+        transition: all .3s;
+        
+        
+        &:not(:last-child){
+            margin-right: 2rem;
+            @include respond(phone){
+                margin-right: 1rem;
+            }
+        }
+
+        &:hover{
+            box-shadow: 0 1rem 1.5rem rgba($color-black, .15);
+        }
+
+        &:active{
+            transform: translateY(2px);
+            box-shadow: 0 1rem 1rem rgba($color-black, .08);
+        }
+
+        @include respond(phone) {
+            margin-bottom: 2rem;
+            text-align: center;
+            margin-right: 1rem;
+        }
+    }
+
+    &__img{
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+
+        @include respond(phone){
+            width: 25px;
+            height: 25px;
+        }
+    }
+
+    &__content{
+        display: inline-block;
+        margin-left: .8rem;
+        @include respond(phone){
+            margin-left: .6rem;
+        }
+    }
+
+    &__text{
+        text-transform: capitalize;
+        font-weight: 500;
+        font-size: 1.5rem;
+        display: block;
+    }
+
+    &__brand{
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-weight: 600;
+        display: block;
+    }
+}
